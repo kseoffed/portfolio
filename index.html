@@ -3,25 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Byungchan Park's Portfolio</title>
+  <title>Rex's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Byungchan</h1>
-    <p>Game Developer & AI Enthusiast</p>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>Byungchan Park</h1>
+      <p>Email: <a href="mailto:tmdfl370@gmail.com">tmdfl370@gmail.com</a></p>
+      <p>Phone: +1 (425) 521-9819</p>
+      <hr />
+      <h2>Summary</h2>
+      <p>
+        Aspiring Unity Game Developer with hands-on experience in enemy AI, turret systems, UI/UX, and gameplay mechanics.
+        Strong in C#, C++, and JavaScript. Passionate about creating engaging interactive experiences.
+      </p>
+    </aside>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Flying Monster AI</h3>
-      <p>A Unity game using A* pathfinding for flying monsters.</p>
-    </div>
-  </section>
+    <main class="content">
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>DigiPen Institute of Technology</strong>, WA — B.S. in CS (2023–2025)</li>
+          <li><strong>Keimyung University</strong>, South Korea — BCS (2021–2023)</li>
+        </ul>
+      </section>
 
-  <footer>
-    <p>Contact: cassie@example.com</p>
-  </footer>
+      <section>
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Languages: C#, C++, C, JavaScript</li>
+          <li>Engines/Tools: Unity, Visual Studio, Git, OpenGL</li>
+          <li>Systems: Enemy AI, State Machines, UI/UX, Singleton</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+            <div class="project">
+                <h3>I Am Alone – 2D Top-Down Zombie Shooter</h3>
+                <p><strong>Solo Project</strong> | JavaScript (p5.js)</p>
+                <p>Created a stationary shooter where the player defends waves of zombies from the screen center. Implemented mouse-based aiming and shooting. Fully playable in-browser.</p>
+                <p><a href="https://editor.p5js.org/tmdfl370/full/ph9aPHZVs" target="_blank">▶ Play Online</a></p>
+            </div>
+
+            <div class="project">
+                <h3>BeatSlash – 2D Rhythm Game</h3>
+                <p><strong>Team of 3</strong> | C++ with Doodle Engine (OpenGL-based)</p>
+                <p>Developed core rhythm game system including note spawning and beat synchronization. Built a custom rhythm map editor (usable in debug environment). Used school-provided Doodle library based on OpenGL.</p>
+                <p><a href="https://drive.google.com/file/d/1yXycHQO2Rag4gqpiiqlqF-igHt3P798q/view?usp=sharing" target="_blank">⬇ Download Game</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Blinded – 2D Platformer / Boss Rush Game</h3>
+                <p><strong>Team of 5</strong> | C++ / OpenGL</p>
+                <p>Implemented enemy and boss patterns with visual telegraphing. Built full player control system including movement, hit/hurtboxes, and reactive combat flow. Focused on timing-based precision gameplay.</p>
+                <p><a href="https://mhchriskim.github.io/Blinded/" target="_blank">▶ Play Demo</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Megalocephalo – 3D Unity Platformer</h3>
+                <p><strong>Team of 8</strong> | Unity / C#</p>
+                <p>Programmed enemy AI patterns using modular state logic. Developed key UI/UX elements such as health indicators and feedback cues. Collaborated with level designers for consistent pacing and clarity.</p>
+            </div>
+
+            <div class="project">
+                <h3>Breath of the Sky – 3D VR Game</h3>
+                <p><strong>Team of 5</strong> | Unity VR / C#</p>
+                <p>Created predictive turret mechanics that track player position using only velocity data, resulting in a responsive but fair system. Designed smooth dual-axis turret animations (horizontal guard / vertical barrel). Implemented flying enemy behaviors with state machines. Optimized UI/UX for VR headset interactions.</p>
+            </div>
+        </section>
+    </main>
+  </div>
 </body>
 </html>
