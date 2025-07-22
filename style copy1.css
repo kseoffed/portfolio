@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* 🔁 핵심 */
+  background-color: #1f1f1f;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+   margin-top: 120px;
+  width: 100%; /* 브라우저 너비에 따라 수축 가능하게 */
+  box-sizing: border-box;
+
+}
+
+.sidebar {
+  height: 25%;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 2rem;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #1f1f1f;
+  color: white;
+  z-index: 1000;
+  display: flex;
+}
+
+.topbar-container {
+  display: flex;
+  flex-direction: column; /* 세로로 쌓기 */
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1000px; /* ➤ project-container와 맞추기 */
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  gap: 0.25rem;            /* 간격 조절 */
+}
+
+.topbar h1 {
+  font-size: 40px;        /* 제목 크기 조정 */
+  color: #007acc;
+  margin: 0;             /* 기본 여백 제거 */
+  display: block;
+}
+
+.topbar p {
+  font-size: 20px;       /* 부제목 크기 조정 */
+  color: #ffffff;
+  margin: 0;             /* 기본 여백 제거 */
+  display: block;
+}
+
+.content {
+  height: 75%;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 48px; 
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+ h2, h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+ph {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+}
+
+li {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+pli{
+  color: #000000;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;     /* 중앙 정렬의 폭 제한 */
+  margin: 0 auto;         /* 가운데 정렬 */
+  padding: 2rem;          /* 양쪽 여백 */
+}
+
+.project {
+  background: white;
+  padding: 1rem;
+  border-left: 4px solid #007acc;
+  border-radius: 4px;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto; /* 💡 오른쪽 끝으로 밀어냄 */
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #90caf9; /* hover 색상 */
+}
