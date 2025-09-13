@@ -14,8 +14,9 @@
       <a href="#about"   data-i18n="nav.about">About</a>
       <a href="#project" data-i18n="nav.project">Project</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
-      <!-- 이력서: 모양은 a 링크, 동작은 JS 강제 다운로드 -->
-      <a href="#" id="resume-link" data-i18n="nav.resume">Resume</a>
+      <a href="javascript:void(0)" onclick="downloadResume(document.documentElement.lang)" data-i18n="nav.resume">
+        Resume
+      </a>
 
       <span class="divider" aria-hidden="true">|</span>
       <button class="lang-btn" type="button" data-setlang="en" aria-pressed="false">EN</button>
@@ -143,13 +144,12 @@
         <li data-i18n="projects.breath.point3">상태 머신 기반 비행 적 AI·HMD UX 최적화</li>
       </ul>
         <!-- 링크 버튼 추가 -->
-      <a href="https://drive.google.com/file/d/1y--pQt9mmrD4TDsRPLBTKqdCy9zgNUe6/view?usp=sharing" 
+      <p class="links">
+        <a href="https://drive.google.com/file/d/1y--pQt9mmrD4TDsRPLBTKqdCy9zgNUe6/view?usp=sharing" 
         target="_blank" 
-        rel="noopener noreferrer" 
-        class="project-link" 
-        data-i18n="projects.breath.link">
-        ▶ 데모 다운로드
-      </a>
+        rel="noopener" 
+        data-i18n="projects.breath.link">▶ 데모 다운로드</a></p>
+
     </article>
   </div>
 </section>

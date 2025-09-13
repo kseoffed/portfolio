@@ -255,43 +255,7 @@ function downloadResume(lang) {
     fileName = "BCP_Resume_KO.pdf";
   }
 
-  function forceDownload(filePath, fileName) {
-  const a = document.createElement('a');
-  a.href = filePath;
-  a.setAttribute('download', fileName);
-  // 일부 브라우저에서 확실히 동작하도록
-  a.setAttribute('target', '_self');
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}
-
-function downloadResumeFor(lang) {
-  if (lang === 'en') {
-    forceDownload('./assets/BCP_Resume_EN.pdf?v=2025-09-13', 'BCP_Resume_EN.pdf');
-  } else {
-    // 기본 ko
-    forceDownload('./assets/BCP_Resume_KO.pdf?v=2025-09-13', 'BCP_Resume_KO.pdf');
-  }
-}
-
-function bindResumeMenu() {
-  const resumeLink = document.getElementById('resume-link');
-  if (!resumeLink) return;
-  resumeLink.addEventListener('click', (e) => {
-    e.preventDefault(); // 새 탭 열림 방지
-    const lang = document.documentElement.getAttribute('lang') || 'ko';
-    downloadResumeFor(lang);
-  });
-}
-
-// 초기화 시 바인딩
-document.addEventListener('DOMContentLoaded', () => {
-  bindResumeMenu();
-});
-
-// 언어 변경 시에도 그대로 작동 (기존 applyLang 유지)
-
+  
 
   // 가짜 a 태그 생성 후 강제 다운로드
   const link = document.createElement("a");
