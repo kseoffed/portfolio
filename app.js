@@ -4,7 +4,7 @@ const I18N = {
     title: "Byungchan's Portfolio",
     name: "박병찬",
     "nav.about": "About",
-    "nav.project": "Project",
+    "nav.project": "Projects",
     "nav.resume": "Download Resume",
     "nav.contact": "Contact",
 
@@ -73,10 +73,10 @@ const I18N = {
 
     // Resume
     "resume.edu.title": "학력",
-    "sections.education.digipen.major": "CS 실시간 인터랙티브 시뮬레이션",
-    "sections.education.digipen.period": "2023-09 ~ 2025-04",
-    "sections.education.keimyung.major": "디지펜게임공학과",
-    "sections.education.keimyung.period": "2021-03 ~ 2025-08",
+    "sections.education.digipen.major": "전공 : CS 실시간 인터랙티브 시뮬레이션",
+    "sections.education.digipen.period": "기간 :2023-09 ~ 2025-04",
+    "sections.education.keimyung.major": "전공 : 디지펜게임공학과",
+    "sections.education.keimyung.period": "기간 :2021-03 ~ 2025-08",
     "resume.skills.title": "핵심 역량",
     "resume.skills.item1": "Enemy AI, 상태 머신, 터렛/프로젝타일 시스템",
     "resume.skills.item2": "UI/UX, 입력 시스템, 히트/허트박스",
@@ -165,10 +165,10 @@ const I18N = {
     "resume.edu.digipen": "DigiPen Institute of Technology — B.S. in Computer Science (2023–2025), WA, USA",
     "resume.edu.keimyung": "Keimyung University — BCS (2021–2023), Daegu, South Korea",
     "resume.skills.title": "Core Skills",
-    "sections.education.digipen.major": "CS Real-Time Interactive Simulation",
-    "sections.education.digipen.period": "Sep 2023 ~ Apr 2025",
-    "sections.education.keimyung.major": "DigiPen Game Engineering",
-    "sections.education.keimyung.period": "Mar 2021 ~ Aug 2025",
+    "sections.education.digipen.major": "Major: CS Real-Time Interactive Simulation",
+    "sections.education.digipen.period": "Dates: Sep 2023 ~ Apr 2025",
+    "sections.education.keimyung.major": "Major: DigiPen Game Engineering",
+    "sections.education.keimyung.period": "Dates: Mar 2021 ~ Aug 2025",
 
     // Contact
     "sections.contact.body": "Open to collaboration and inquiries.",
