@@ -31,6 +31,10 @@ const I18N = {
     "projects.link.playDemo": "▶ 데모 링크",
     "projects.link.downloadDemo": "▶ 데모 다운로드",
 
+    // project requirements
+    "projects.requirements.pcOnly": "※ PC 환경에서만 실행 가능",
+    "projects.requirements.vrRequired": "※ VR 헤드셋 필수",
+
     // Projects - I Am Alone
     "projects.iamalone.title": "I Am Alone – 2D Top-Down Zombie Shooter",
     "projects.iamalone.tech": "JavaScript (p5.js)",
@@ -70,6 +74,7 @@ const I18N = {
     "projects.breath.point1": "속도 기반 예측 터렛 타게팅 설계",
     "projects.breath.point2": "수평 가드/수직 배럴 2축 터렛 애니메이션",
     "projects.breath.point3": "상태 머신 기반 비행 적 AI·HMD UX 최적화",
+    "projects.breath.link": "▶ 데모 다운로드",
 
     // Resume
     "resume.edu.title": "학력",
@@ -120,6 +125,10 @@ const I18N = {
     "projects.link.playDemo": "▶ Demo Link",
     "projects.link.downloadDemo": "▶ Download Demo",
 
+    // project requirements
+    "projects.requirements.pcOnly": "※ PC only",
+    "projects.requirements.vrRequired": "※ VR headset required",
+
     // Projects - I Am Alone
     "projects.iamalone.title": "I Am Alone – 2D Top-Down Zombie Shooter",
     "projects.iamalone.tech": "JavaScript (p5.js)",
@@ -159,6 +168,7 @@ const I18N = {
     "projects.breath.point1": "Designed predictive turret targeting using velocity",
     "projects.breath.point2": "Dual-axis turret animation (horizontal guard / vertical barrel)",
     "projects.breath.point3": "State-machine flying enemies; HMD UX optimizations",
+    "projects.breath.link": "▶ Demo Download",
 
     // Resume
     "resume.edu.title": "Education",
@@ -211,5 +221,86 @@ function initLang() {
     applyLang(btn.dataset.setlang);
   });
 }
+
+function updateResumeLink(lang) {
+  const resumeLink = document.getElementById("resume-link");
+
+  if (lang === "en") {
+    resumeLink.href = "./assets/BCP_Resume_EN.pdf?v=2025-09-13";
+    resumeLink.setAttribute("download", "BCP_Resume_EN.pdf");
+    resumeLink.textContent = "Download Resume";
+  } else if (lang === "ko") {
+    resumeLink.href = "./assets/BCP_Resume_KO.pdf?v=2025-09-13";
+    resumeLink.setAttribute("download", "BCP_Resume_KO.pdf");
+    resumeLink.textContent = "이력서 다운로드";
+  }
+}
+
+// 언어 전환 시 호출
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  updateResumeLink(lang);
+  // 기존 i18n 갱신 로직도 같이 실행
+}
+
+function downloadResume(lang) {
+  let filePath = "";
+  let fileName = "";
+
+  if (lang === "en") {
+    filePath = "./assets/BCP_Resume_EN.pdf?v=2025-09-13";
+    fileName = "BCP_Resume_EN.pdf";
+  } else if (lang === "ko") {
+    filePath = "./assets/BCP_Resume_KO.pdf?v=2025-09-13";
+    fileName = "BCP_Resume_KO.pdf";
+  }
+
+  function forceDownload(filePath, fileName) {
+  const a = document.createElement('a');
+  a.href = filePath;
+  a.setAttribute('download', fileName);
+  // 일부 브라우저에서 확실히 동작하도록
+  a.setAttribute('target', '_self');
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+function downloadResumeFor(lang) {
+  if (lang === 'en') {
+    forceDownload('./assets/BCP_Resume_EN.pdf?v=2025-09-13', 'BCP_Resume_EN.pdf');
+  } else {
+    // 기본 ko
+    forceDownload('./assets/BCP_Resume_KO.pdf?v=2025-09-13', 'BCP_Resume_KO.pdf');
+  }
+}
+
+function bindResumeMenu() {
+  const resumeLink = document.getElementById('resume-link');
+  if (!resumeLink) return;
+  resumeLink.addEventListener('click', (e) => {
+    e.preventDefault(); // 새 탭 열림 방지
+    const lang = document.documentElement.getAttribute('lang') || 'ko';
+    downloadResumeFor(lang);
+  });
+}
+
+// 초기화 시 바인딩
+document.addEventListener('DOMContentLoaded', () => {
+  bindResumeMenu();
+});
+
+// 언어 변경 시에도 그대로 작동 (기존 applyLang 유지)
+
+
+  // 가짜 a 태그 생성 후 강제 다운로드
+  const link = document.createElement("a");
+  link.href = filePath;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 
 document.addEventListener("DOMContentLoaded", initLang);

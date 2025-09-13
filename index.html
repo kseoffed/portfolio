@@ -14,12 +14,8 @@
       <a href="#about"   data-i18n="nav.about">About</a>
       <a href="#project" data-i18n="nav.project">Project</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
-      <a
-        href="./assets/Byungchan_Park_Resume.pdf?v=2025-09-13"
-        download="Byungchan_Park_Resume.pdf"
-        type="application/pdf"
-        data-i18n="nav.resume"
-      >이력서 다운로드</a>
+      <!-- 이력서: 모양은 a 링크, 동작은 JS 강제 다운로드 -->
+      <a href="#" id="resume-link" data-i18n="nav.resume">Resume</a>
 
       <span class="divider" aria-hidden="true">|</span>
       <button class="lang-btn" type="button" data-setlang="en" aria-pressed="false">EN</button>
@@ -69,73 +65,95 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="project" class="section">
-      <h2 data-i18n="sections.project.title">프로젝트</h2>
+<section id="project" class="section">
+  <h2 data-i18n="sections.project.title">프로젝트</h2>
 
-      <!-- I Am Alone -->
-      <article class="project-card">
-        <h3 data-i18n="projects.iamalone.title">I Am Alone – 2D Top-Down Zombie Shooter</h3>
-        <p class="meta"><span data-i18n="projects.role.solo">단독</span> · <span data-i18n="projects.iamalone.tech">JavaScript (p5.js)</span></p>
-        <p data-i18n="projects.iamalone.desc">화면 중앙에서 좀비 웨이브를 방어하는 고정 슈터. 마우스 조준/사격, 브라우저 플레이 지원.</p>
-        <ul>
-          <li data-i18n="projects.iamalone.point1">마우스 조준/사격 및 웨이브 루프 구현</li>
-          <li data-i18n="projects.iamalone.point2">스폰 페이싱·피격 피드백 밸런싱</li>
-          <li data-i18n="projects.iamalone.point3">p5.js 기반 브라우저 실행 빌드 배포</li>
-        </ul>
-        <p><a href="https://editor.p5js.org/tmdfl370/full/ph9aPHZVs" target="_blank" rel="noopener" data-i18n="projects.link.play">▶ 온라인 플레이</a></p>
-      </article>
+  <div class="project-grid">
+    <!-- I Am Alone -->
+    <article class="project-card">
+      <img src="./assets/IAMALONE_MAIN_PAGE.png" alt="I Am Alone Screenshot" class="project-img" />
+      <h3 class="project-title" data-i18n="projects.iamalone.title">I Am Alone – 2D Top-Down Zombie Shooter</h3>
+      <p class="meta"><span data-i18n="projects.role.solo">단독</span> · <span data-i18n="projects.iamalone.tech">JavaScript (p5.js)</span></p>
+      <p class="desc" data-i18n="projects.iamalone.desc">화면 중앙에서 좀비 웨이브를 방어하는 고정 슈터. 마우스 조준/사격, 브라우저 플레이 지원.</p>
+      <p class="req" data-i18n="projects.requirements.pcOnly">※ PC 환경에서만 실행 가능</p>
+      <ul class="points">
+        <li data-i18n="projects.iamalone.point1">마우스 조준/사격 및 웨이브 루프 구현</li>
+        <li data-i18n="projects.iamalone.point2">스폰 페이싱·피격 피드백 밸런싱</li>
+        <li data-i18n="projects.iamalone.point3">p5.js 기반 브라우저 실행 빌드 배포</li>
+      </ul>
+      <p class="links"><a href="https://editor.p5js.org/tmdfl370/full/ph9aPHZVs" target="_blank" rel="noopener" data-i18n="projects.link.play">▶ 온라인 플레이</a></p>
+    </article>
 
-      <!-- BeatSlash -->
-      <article class="project-card">
-        <h3 data-i18n="projects.beatslash.title">BeatSlash – 2D Rhythm Game</h3>
-        <p class="meta"><span data-i18n="projects.role.team3">3인 팀</span> · <span data-i18n="projects.beatslash.tech">C++ with Doodle Engine (OpenGL)</span></p>
-        <p data-i18n="projects.beatslash.desc">비트 동기화 노트 스포닝 및 내부 리듬 맵 에디터를 갖춘 리듬 게임.</p>
-        <ul>
-          <li data-i18n="projects.beatslash.point1">템포/비트 기반 노트 스포닝 & 타이밍 판정</li>
-          <li data-i18n="projects.beatslash.point2">디버그 환경용 리듬 맵 에디터 구현</li>
-          <li data-i18n="projects.beatslash.point3">OpenGL 기반 Doodle 라이브러리 연동</li>
-        </ul>
-        <p><a href="https://drive.google.com/file/d/1yXycHQO2Rag4gqpiiqlqF-igHt3P798q/view?usp=sharing" target="_blank" rel="noopener" data-i18n="projects.link.download">▶ 데모 다운로드</a></p>
-      </article>
+    <!-- BeatSlash -->
+    <article class="project-card">
+      <img src="./assets/beatslash_MAIN_PAGE.png" alt="BeatSlash Screenshot" class="project-img" />
+      <h3 class="project-title" data-i18n="projects.beatslash.title">BeatSlash – 2D Rhythm Game</h3>
+      <p class="meta"><span data-i18n="projects.role.team3">3인 팀</span> · <span data-i18n="projects.beatslash.tech">C++ with Doodle Engine (OpenGL)</span></p>
+      <p class="desc" data-i18n="projects.beatslash.desc">비트 동기화 노트 생성 및 내부 리듬 맵 에디터를 갖춘 리듬 게임.</p>
+      <p class="req" data-i18n="projects.requirements.pcOnly">※ PC 환경에서만 실행 가능</p>
+      <ul class="points">
+        <li data-i18n="projects.beatslash.point1">템포/비트 기반 노트 생성 & 타이밍 판정</li>
+        <li data-i18n="projects.beatslash.point2">디버그 환경용 리듬 맵 에디터 구현</li>
+        <li data-i18n="projects.beatslash.point3">OpenGL 기반 Doodle 라이브러리 연동</li>
+      </ul>
+      <p class="links"><a href="https://drive.google.com/file/d/1yXycHQO2Rag4gqpiiqlqF-igHt3P798q/view?usp=sharing" target="_blank" rel="noopener" data-i18n="projects.link.download">▶ 데모 다운로드</a></p>
+    </article>
 
-      <!-- Blinded -->
-      <article class="project-card">
-        <h3 data-i18n="projects.blinded.title">Blinded – 2D Platformer / Boss Rush</h3>
-        <p class="meta"><span data-i18n="projects.role.team5">5인 팀</span> · <span data-i18n="projects.blinded.tech">C++ / OpenGL</span></p>
-        <p data-i18n="projects.blinded.desc">시각적 텔레그래프와 타이밍 중심의 정밀 전투 플랫폼 게임.</p>
-        <ul>
-          <li data-i18n="projects.blinded.point1">적/보스 패턴 및 명확한 텔레그래프 설계</li>
-          <li data-i18n="projects.blinded.point2">플레이어 이동·히트/허트박스·무적 프레임 구현</li>
-          <li data-i18n="projects.blinded.point3">넉백/리커버리/전투 리듬 조정</li>
-        </ul>
-        <p><a href="https://mhchriskim.github.io/Blinded/" target="_blank" rel="noopener" data-i18n="projects.link.playDemo">▶ 데모 플레이</a></p>
-      </article>
+    <!-- Blinded -->
+    <article class="project-card">
+      <img src="./assets/blinded_MAIN_PAGE.png" alt="Blinded Screenshot" class="project-img" />
+      <h3 class="project-title" data-i18n="projects.blinded.title">Blinded – 2D Platformer / Boss Rush</h3>
+      <p class="meta"><span data-i18n="projects.role.team5">5인 팀</span> · <span data-i18n="projects.blinded.tech">C++ / OpenGL</span></p>
+      <p class="desc" data-i18n="projects.blinded.desc">시각적 텔레그래프와 타이밍 중심의 정밀 전투 플랫폼 게임.</p>
+      <p class="req" data-i18n="projects.requirements.pcOnly">※ PC 환경에서만 실행 가능</p>
+      <ul class="points">
+        <li data-i18n="projects.blinded.point1">적/보스 패턴 및 명확한 텔레그래프 설계</li>
+        <li data-i18n="projects.blinded.point2">플레이어 이동·히트/허트박스·무적 프레임 구현</li>
+        <li data-i18n="projects.blinded.point3">넉백/리커버리/전투 리듬 조정</li>
+      </ul>
+      <p class="links"><a href="https://mhchriskim.github.io/Blinded/" target="_blank" rel="noopener" data-i18n="projects.link.playDemo">▶ 데모 플레이</a></p>
+    </article>
 
-      <!-- Megalocephalo -->
-      <article class="project-card">
-        <h3 data-i18n="projects.megalo.title">Megalocephalo – 3D Unity Platformer</h3>
-        <p class="meta"><span data-i18n="projects.role.team8">8인 팀</span> · <span data-i18n="projects.megalo.tech">Unity / C#</span></p>
-        <p data-i18n="projects.megalo.desc">모듈식 적 AI 상태 로직과 깔끔한 UI 플로우를 갖춘 3D 플랫포머.</p>
-        <ul>
-          <li data-i18n="projects.megalo.point1">재사용 가능한 적 AI 상태 머신 구축</li>
-          <li data-i18n="projects.megalo.point2">메인/일시정지 메뉴 및 피드백 큐 구현</li>
-          <li data-i18n="projects.megalo.point3">레벨 디자이너와 페이싱·온보딩 정렬</li>
-        </ul>
-        <p><a href="https://games.digipen.edu/games/megalocephalo" target="_blank" rel="noopener" data-i18n="projects.link.downloadDemo">▶ 데모 다운로드</a></p>
-      </article>
+    <!-- Megalocephalo -->
+    <article class="project-card">
+      <img src="./assets/megalocephalo_MAIN_PAGE.png" alt="Megalocephalo Screenshot" class="project-img" />
+      <h3 class="project-title" data-i18n="projects.megalo.title">Megalocephalo – 3D Unity Platformer</h3>
+      <p class="meta"><span data-i18n="projects.role.team8">8인 팀</span> · <span data-i18n="projects.megalo.tech">Unity / C#</span></p>
+      <p class="desc" data-i18n="projects.megalo.desc">모듈식 적 AI 상태 로직과 깔끔한 UI 플로우를 갖춘 3D 플랫포머.</p>
+      <p class="req" data-i18n="projects.requirements.pcOnly">※ PC 환경에서만 실행 가능</p>
+      <ul class="points">
+        <li data-i18n="projects.megalo.point1">재사용 가능한 적 AI 상태 머신 구축</li>
+        <li data-i18n="projects.megalo.point2">메인/일시정지 메뉴 및 피드백 큐 구현</li>
+        <li data-i18n="projects.megalo.point3">레벨 디자이너와 페이싱·온보딩 정렬</li>
+      </ul>
+      <p class="links"><a href="https://games.digipen.edu/games/megalocephalo" target="_blank" rel="noopener" data-i18n="projects.link.downloadDemo">▶ 데모 다운로드</a></p>
+    </article>
 
-      <!-- Breath of the Sky -->
-      <article class="project-card">
-        <h3 data-i18n="projects.breath.title">Breath of the Sky – 3D VR Game</h3>
-        <p class="meta"><span data-i18n="projects.role.team5">5인 팀</span> · <span data-i18n="projects.breath.tech">Unity VR / C#</span></p>
-        <p data-i18n="projects.breath.desc">속도 정보만으로 예측 조준하는 터렛과 비행 적 AI를 갖춘 VR 경험.</p>
-        <ul>
-          <li data-i18n="projects.breath.point1">속도 기반 예측 터렛 타게팅 설계</li>
-          <li data-i18n="projects.breath.point2">수평 가드/수직 배럴 2축 터렛 애니메이션</li>
-          <li data-i18n="projects.breath.point3">상태 머신 기반 비행 적 AI·HMD UX 최적화</li>
-        </ul>
-      </article>
-    </section>
+    <!-- Breath of the Sky -->
+    <article class="project-card">
+      <img src="./assets/breath_of_the_sky_MAIN_PAGE.png" alt="Breath of the Sky Screenshot" class="project-img" />
+      <h3 class="project-title" data-i18n="projects.breath.title">Breath of the Sky – 3D VR Game</h3>
+      <p class="meta"><span data-i18n="projects.role.team5">5인 팀</span> · <span data-i18n="projects.breath.tech">Unity VR / C#</span></p>
+      <p class="desc" data-i18n="projects.breath.desc">속도 정보만으로 예측 조준하는 터렛과 비행 적 AI를 갖춘 VR 경험.</p>
+      <p class="req" data-i18n="projects.requirements.pcOnly">※ PC 환경에서만 실행 가능</p>
+      <p class="req" data-i18n="projects.requirements.vrRequired">※ VR 헤드셋 필수</p>
+      <ul class="points">
+        <li data-i18n="projects.breath.point1">속도 기반 예측 터렛 타게팅 설계</li>
+        <li data-i18n="projects.breath.point2">수평 가드/수직 배럴 2축 터렛 애니메이션</li>
+        <li data-i18n="projects.breath.point3">상태 머신 기반 비행 적 AI·HMD UX 최적화</li>
+      </ul>
+        <!-- 링크 버튼 추가 -->
+      <a href="https://drive.google.com/file/d/1y--pQt9mmrD4TDsRPLBTKqdCy9zgNUe6/view?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="project-link" 
+        data-i18n="projects.breath.link">
+        ▶ 데모 다운로드
+      </a>
+    </article>
+  </div>
+</section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="section">
