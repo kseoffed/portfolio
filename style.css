@@ -12,10 +12,10 @@ body {
 }
 
 main {
-  max-width: 800px;   /* 본문 너비 제한 */
-  margin: 0 auto;     /* 좌우 auto → 중앙 정렬(컨테이너) */
-  padding: 2rem 1rem; /* 여백 */
-  text-align: left;   /* 기본은 왼쪽 정렬 */
+  max-width: 1040px; 
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
 }
 
 /* 소개/프로젝트/연락처는 중앙 정렬(요청사항) */
@@ -109,21 +109,12 @@ a:focus {
 }
 
 /* 프로젝트 그리드: 2열, 자동 줄바꿈, 중앙 정렬 */
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(320px, 1fr)); /* 2열 고정 */
-  gap:24px;                 /* 카드 사이 간격 */
-  justify-content:center;   /* 그리드 자체 중앙 */
-  align-items:start;        /* 카드 위쪽 정렬 */
-}
-
-/* ✅ 프로젝트 그리드: 2열, 자동 줄바꿈, 중앙 정렬 */
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(320px, 1fr)); /* 2열 고정 */
-  gap:24px;                 /* 카드 사이 간격 */
-  justify-content:center;   /* 그리드 자체 중앙 */
-  align-items:start;        /* 카드 위쪽 정렬 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
 }
 
 /* 화면이 좁아지면 1열로 */
