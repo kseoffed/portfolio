@@ -22,7 +22,7 @@ const I18N = {
     "about.skills.systems": "시스템: Enemy AI, State Machines, Turret/Projectile, UI/UX, Input, Hit/Hurtbox",
 
     // Generic project labels
-    "projects.role.solo": "단독",
+    "projects.role.solo": "1인",
     "projects.role.team3": "3인 팀",
     "projects.role.team5": "5인 팀",
     "projects.role.team8": "8인 팀",
@@ -58,6 +58,8 @@ const I18N = {
     "projects.blinded.point1": "적/보스 패턴 및 명확한 텔레그래프 설계",
     "projects.blinded.point2": "플레이어 이동·히트/허트박스·무적 프레임 구현",
     "projects.blinded.point3": "넉백/리커버리/전투 리듬 조정",
+    "projects.blinded.link.trailer": "▶ 트레일러 영상",
+    "projects.blinded.link.gameplay": "▶ 게임플레이 영상",
 
     // Projects - Megalocephalo
     "projects.megalo.title": "Megalocephalo – 3D Unity Platformer",
@@ -66,6 +68,7 @@ const I18N = {
     "projects.megalo.point1": "재사용 가능한 적 AI 상태 머신 구축",
     "projects.megalo.point2": "메인/일시정지 메뉴 및 피드백 큐 구현",
     "projects.megalo.point3": "레벨 디자이너와 페이싱·온보딩 정렬",
+    "projects.megalo.link.video": "▶ 게임플레이 영상",
 
     // Projects - Breath of the Sky
     "projects.breath.title": "Breath of the Sky – 3D VR Game",
@@ -75,6 +78,7 @@ const I18N = {
     "projects.breath.point2": "수평 가드/수직 배럴 2축 터렛 애니메이션",
     "projects.breath.point3": "상태 머신 기반 비행 적 AI·HMD UX 최적화",
     "projects.breath.link": "▶ 데모 다운로드",
+    "projects.breath.trailer": "▶ 트레일러 영상",
 
     // Resume
     "resume.edu.title": "학력",
@@ -152,6 +156,8 @@ const I18N = {
     "projects.blinded.point1": "Enemy/boss patterns with readable telegraphs",
     "projects.blinded.point2": "Player controller incl. movement & hit/hurtboxes",
     "projects.blinded.point3": "Tuned knockback, recovery, and combat cadence",
+    "projects.blinded.link.trailer": "▶ Trailer Video",
+    "projects.blinded.link.gameplay": "▶ Gameplay Video",
 
     // Projects - Megalocephalo
     "projects.megalo.title": "Megalocephalo – 3D Unity Platformer",
@@ -160,6 +166,7 @@ const I18N = {
     "projects.megalo.point1": "Reusable enemy AI state machines",
     "projects.megalo.point2": "Main/Pause menus and feedback cues",
     "projects.megalo.point3": "Aligned pacing/onboarding with level design",
+    "projects.megalo.link.video": "▶ Gameplay Video",
 
     // Projects - Breath of the Sky
     "projects.breath.title": "Breath of the Sky – 3D VR Game",
@@ -169,6 +176,7 @@ const I18N = {
     "projects.breath.point2": "Dual-axis turret animation (horizontal guard / vertical barrel)",
     "projects.breath.point3": "State-machine flying enemies; HMD UX optimizations",
     "projects.breath.link": "▶ Demo Download",
+    "projects.breath.trailer": "▶ Trailer Video",
 
     // Resume
     "resume.edu.title": "Education",
