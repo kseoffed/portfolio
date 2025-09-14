@@ -18,8 +18,9 @@ const I18N = {
     "about.summary2": "C#, C++, JavaScript로 2D부터 3D VR까지 구현 경험이 있으며, 가독성 좋은 코드와 명확한 피드백, 플레이 가능한 빌드를 중시합니다.",
     "about.skills.title": "기술 스택",
     "about.skills.langs": "언어: C#, C++, C, JavaScript",
-    "about.skills.tools": "엔진/툴: Unity, Visual Studio, Git, OpenGL, p5.js",
-    "about.skills.systems": "시스템: Enemy AI, State Machines, Turret/Projectile, UI/UX, Input, Hit/Hurtbox",
+    "about.skills.engine": "엔진: Unity",
+    "about.skills.tools": "툴/프레임워크: Unity Editor, Visual Studio, Git, OpenGL, p5.js",
+    "about.skills.systems": "시스템: 적 AI, 상태 머신, 히트/허트박스, UI/UX, 싱글톤 패턴, 게임플레이 시스템",
 
     // Generic project labels
     "projects.role.solo": "1인",
@@ -116,8 +117,9 @@ const I18N = {
     "about.summary2": "Hands-on across C#, C++, and JavaScript from 2D prototypes to 3D VR, with emphasis on readable code, clear feedback, and shipping playable builds.",
     "about.skills.title": "Tech Stack",
     "about.skills.langs": "Languages: C#, C++, C, JavaScript",
-    "about.skills.tools": "Engines/Tools: Unity, Visual Studio, Git, OpenGL, p5.js",
-    "about.skills.systems": "Systems: Enemy AI, State Machines, Turret/Projectile, UI/UX, Input, Hit/Hurtbox",
+    "about.skills.engine": "Engine: Unity",
+    "about.skills.tools": "Tools/Frameworks: Unity Editor, Visual Studio, Git, OpenGL, p5.js",
+    "about.skills.systems": "Systems: Enemy AI, State Machines, Hit/Hurtbox, UI/UX, Singleton Pattern, Gameplay Systems",
 
     // Generic project labels
     "projects.role.solo": "Solo",
